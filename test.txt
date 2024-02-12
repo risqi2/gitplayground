@@ -5,5 +5,10 @@ halo3
 halo4
 halo5
 halo6
+<<<<<<< HEAD
 halo7
 halo8
+halo9
+=======
+halo7
+>>>>>>> parent of c242bd8 (halo8 added)
