@@ -1,0 +1,17 @@
+git fetch
+
+git stash
+
+git revert
+
+git reset
+
+git rebase
+
+git amend
+
+squashing
+    git rebase -i HEAD~3
+    git merge --squash feature/login
+
+    
