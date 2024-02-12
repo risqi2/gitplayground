@@ -1,17 +1,37 @@
-git fetch
+git fetch (used to fetch the latest changes from the remote repository.)
+    git fetch origin
+    git log --oneline
 
-git stash
+git pull (used to pull the latest changes from the remote repository.)
+    git pull origin
+    git log --oneline
 
-git revert
+git stash 
 
-git reset
+git revert 
+    git revert HEAD --no-edit
+        git reset, which brings the repository back to an earlier state in the commits without making a new commit.
 
-git rebase
+git reset (used to bring the repository back to an earlier state in the commits without making a new commit.)
+    git reset commit_id_last_3 ( move the repository back to a previous commit, discarding any changes made after that commit.)
+    git log --oneline
+    git reset commit_id_last_1 (Even though the commits are no longer showing up in the log, it is not removed from Git.)
 
-git amend
+git merge (used to merge two branches.)
+    git merge feature/login
+    git log --oneline
 
-squashing
+git rebase (used to rebase on top of another branch.)
+    git rebase -i HEAD~3
+    git log --oneline
+
+git amend   (used to modify the most recent commit.)
+    git commit -m "Adding plines to reddme" (wrong typo in the commit message)
+    git log --oneline
+    git commit --amend -m "Added lines to README.md" (correct typo in the last commit message)
+    git log --oneline
+
+squashing (used to squash multiple commits into a single commit.)
     git rebase -i HEAD~3
     git merge --squash feature/login
 
-    
