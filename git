@@ -35,3 +35,9 @@ squashing (used to squash multiple commits into a single commit.)
     git rebase -i HEAD~3
     git merge --squash feature/login
 
+
+how to contribute to the project?
+git remote add upstream git://github.com/some-url
+git fetch upstream
+git rebase upstream/master
+
